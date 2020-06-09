@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="POST">{% csrf_token %}
+        {% comment %} <input type="text" name="username">username</input>
+        <input type="password" name="password">password</input>
+        <input type="text" name="firstName">firstName</input>
+        <input type="text" name="LastName">LastName</input>
+        <input type="email" name="Email">Email</input>{% endcomment %}
+        {{form.as_p}}
+        <button type="submit">submit</button> 
+    </form>
+</body>
+
+</html>
